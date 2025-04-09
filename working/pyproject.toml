@@ -1,0 +1,36 @@
+[project]
+name = "working"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Lzotti",email = "leonardozotti.d@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "scipy (>=1.15.2,<2.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "cython (>=3.0.12,<4.0.0)",
+    "astroml (>=1.0.2.post1,<2.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "astropy (>=7.0.1,<8.0.0)",
+    "corner (>=2.2.3,<3.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "emcee (>=3.1.6,<4.0.0)",
+    "dynesty (>=2.1.5,<3.0.0)",
+    "bokeh (>=3.7.2,<4.0.0)",
+    "h5py (>=3.13.0,<4.0.0)",
+    "tensorflow (>=2.19.0,<3.0.0)",
+    "torch (>=2.6.0,<3.0.0)",
+    "torchvision (>=0.21.0,<0.22.0)",
+    "gatspy (>=0.3,<0.4)"
+]
+
+[tool.poetry]
+packages = [{include = "working", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
