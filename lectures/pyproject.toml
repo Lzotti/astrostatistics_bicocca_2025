@@ -6,7 +6,7 @@ authors = ["Lzotti <leonardozotti.d@gmail.com>"]
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.12"
+python = ">=3.11"
 scipy = ">=1.15.2,<2.0.0"
 matplotlib = ">=3.10.1,<4.0.0"
 cython = ">=3.0.12,<4.0.0"
