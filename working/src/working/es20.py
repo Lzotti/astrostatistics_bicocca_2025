@@ -31,7 +31,7 @@ for key in f.keys():
     X = f[key][:].reshape(-1, 1)  
     all_features.append(X)  
 
-    idx = np.random.choice(X.shape[0], size=100000, replace=False)
+    idx = np.random.choice(X.shape[0], size=10000, replace=False)
     X = X[idx]
     labels = all_labels[idx]
     # labels = all_labels  
@@ -67,7 +67,7 @@ for key in f.keys():
 
 print("Processing all features together")
 all_features_combined = np.hstack(all_features)  # Combina tutte le feature in un unico array
-idx = np.random.choice(all_features_combined.shape[0], size=100000, replace=False)
+idx = np.random.choice(all_features_combined.shape[0], size=10000, replace=False)
 X = all_features_combined[idx]
 labels = all_labels[idx]
 # labels = all_labels  
@@ -125,7 +125,7 @@ for key in f.keys():
     X = f[key][:].reshape(-1, 1)  
     all_features.append(X)  
 
-    idx = np.random.choice(X.shape[0], size=100000, replace=False)
+    idx = np.random.choice(X.shape[0], size=10000, replace=False)
     X = X[idx]
     labels = all_labels[idx]
 
@@ -159,7 +159,7 @@ for key in f.keys():
 
 print("Processing all features together")
 all_features_combined = np.hstack(all_features)  # Combina tutte le feature in un unico array
-idx = np.random.choice(all_features_combined.shape[0], size=100000, replace=False)
+idx = np.random.choice(all_features_combined.shape[0], size=10000, replace=False)
 X = all_features_combined[idx]
 labels = all_labels[idx]
 
